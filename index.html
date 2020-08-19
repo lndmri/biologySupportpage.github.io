@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Biology support</title>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+		}
+
+		body{
+			font-family: 'Balsamiq Sans', cursive;
+		}
+
+		#title-bar{
+			margin:0 auto;
+			padding:0;
+			width: 100%;
+			height: 5em;
+			/*background: linear-gradient(to bottom left, #ffffff,#07FF97) ;*/
+			background-color: #32BC2B;
+			text-align: center;
+			background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTNtXL85QE1aDonDhc8vQbpa1L6mwwYfOA_3VihL8q7fJhBqrJS&usqp=CAU);
+		}
+
+
+
+
+		#title-bar p{
+			margin-top:0;
+			font-size: 3em;
+			font-weight: bold;
+			color: white;
+			text-shadow: 2px 3px 3px black;
+			position: relative;
+			top:0.2em;
+			}
+
+			#menu{
+			margin:0 auto;
+			padding:0;
+			width: 100%;
+			height: 2em;
+			background-color: #5B8E3D;
+			display: flex;
+			text-align: center;
+
+			}
+
+
+
+			
+			.levels{
+				margin-top:0;
+				font-size: 1.5em;
+				width: 20%;
+				color: white;
+				
+			}
+
+			.levels:hover{
+				background-color: black; 
+			}
+
+			
+			.levels:hover #levelshov{
+				display: flex;
+				flex-flow: column;
+				position: relative;
+				z-index: 2;
+				box-shadow: 0.2em 0.2em 0.2em black;
+
+
+			}
+
+			.levels #levelshov{
+				display:none;
+				background-color: #cccccc;
+
+
+			}
+
+			.levels #levelshov a:link, .levels #levelshov a:visited {
+				text-decoration: none;
+				font-size: 0.9em;
+				font-weight: bold;
+
+			}
+
+			.levels #levelshov a:hover, .levels #levelshov a:focus, .levels #levelshov a:active{
+				 background-color: yellow;
+
+			}
+
+			.levels #levelshov a>p{
+			font-size: 0.7em;
+			font-weight: normal;
+
+			}
+
+			#page-container{
+				width:90%;
+				margin: 0 auto;
+				background-image: url(images/leave.jpg) no-repeat contain;
+
+
+			}	
+
+			#about{
+				position: relative;
+				z-index: 0;
+
+			}
+
+			#about-images img{
+				width:10em; 
+				height:10em;
+				border-radius: 1em;
+				transition: width 2s ease, height 2s ease , border 2s ease;
+
+			}
+
+			#about-images img:hover{
+				width: 20em;
+				height: 20em;
+				border: 3px solid black;
+				
+				
+
+			}
+
+			#search-button{
+				float: right;
+				margin-right: auto;
+				position: sticky;
+				top:0;
+				z-index: 1;
+
+			}
+			
+			#search{
+		float: left;
+		margin-right:0; 
+		padding-right:0;
+		background-color: #E4E4E4;
+		width:13.50em;
+		border: none;
+		font-size:1.125em;
+
+	}
+
+	#search-icon{
+		width:1.6375em;
+		height: 1.7375em;
+		float: left;
+		background-color: #E4E4E4;
+		margin-left: 0;
+		padding-left: 0;	
+	}
+
+
+
+
+
+
+
+
+	</style>
+</head>
+
+<body>
+
+
+	<div id="title-bar">
+			<p>Biology Support Page</p>
+	 </div>
+
+	 <div id="menu">
+
+	 	<div class="levels">Levels
+		 	<div id="levelshov"> 
+		 		<a href="" class="sublev">Kindergarten
+		 			<p>General information and interactive games to incentive the study of Biology since early ages</p></a>
+		 		<a href="" class="sublev">Elementary School
+		 			<p>We include the basics of Biology in this level and relevant informtion about living beings to stimulate the study of this science</p></a>
+		 		<a href=""class="sublev">Middle School
+		 			<p>Deeper study of biology focusing on everything related to the human body</p></a>
+		 		<a href=""class="sublev">High School
+		 			<p>Include very important and helpful information to cover all the topics at the High school level.</p></a>	
+		 	</div>
+	 	</div>
+
+	 	<div class="levels">News
+		 	<div id="levelshov"> 
+		 		<a href="https://phys.org/biology-news/"   class="sublev">Go now
+		 			<p>Click here to know about the latest news in the world of biology.</p></a>
+		 			
+		 	</div>
+	 	</div>
+
+	 	<div class="levels">Articles
+		 	<div id="levelshov"> 
+		 		<a href="https://www.scientificamerican.com/biology/"  class="sublev">Go to articles
+		 			<p>Click here to check interesting articles covering a a big variety of topics.</p></a>
+		 			
+		 	</div>
+	 	</div>
+
+	 	<div class="levels">Exercises
+		 	<div id="levelshov"> 
+		 		<a href="https://bio.libretexts.org/Bookshelves/Introductory_and_General_Biology/Book%3A_Concepts_in_Biology_(OpenStax)/1%3A_Introduction_to_Biology/1.E%3A_Introduction_to_Biology_(Exercises)" class="sublev">Go to exercises
+		 			<p>Click here to check test what you have learned.</p></a>		 			
+		 	</div>
+	 	</div>
+
+	 	<div class="levels">Videos
+		 	<div id="levelshov"> 
+		 		<a href="https://www.khanacademy.org/science/high-school-biology/hs-biology-foundations/hs-biology-and-the-scientific-method/v/overview-of-biology" class="sublev">Go to videos
+		 			<p>Click here to see videos related to the topics discussed.</p></a>		 			
+		 	</div>
+	 	</div>
+
+	 	
+	 </div>
+
+	 <div id="search-button">
+		<input  type="text" placeholder="Search" id="search">
+		<input type="image" src="images/search.png" id="search-icon">
+	 </div>
+	 	
+	
+
+	 <div id="page-container">
+	 	
+	 	<div id="about">
+	 		<h1>About...</h1>
+	 		<p>
+	 			Welcome to our Biology Support Site. The purpose of this learning page is to inspire people to take a long journey to the amazing science of Biology. We provide fresh, nutritive and outstanding information that will make you  care and love this science. We want to incentivize the study of this subject in all ages, so we developed different sections according to the scolar level. You will have acces to different articles and books, to support the understanding. Also we include interesting videos and excercises. This learning site is strongly suggested to people who want to study carreers related to medicine, this will be part of the success because provides a strong preparation. There is whole world to explore so do´not wait more and start your journey.
+	 		</p>
+
+	 		<h1>What is Biology?</h1>
+	 		<p>
+	 			Biology is the natural science that focuses on the study of life and living organisms, including their structure, function, development, interactions, evolution, distribution, and taxonomy. The scope of the field is extensive and is divided into several specialized disciplines, such as anatomy, physiology, ethology, genetics, and many more.
+	 			<br>
+
+				All living things share a few key traits: cellular organization, heritable genetic material and the ability to adapt/evolve, metabolism to regulate energy needs, the ability to interact with the environment, maintain homeostasis, reproduce, and the ability to grow and change.
+				</p>
+				<div id="about-images">
+					<a href="https://en.wikipedia.org/wiki/Monera" title="Study Bacteria"><img src="images/bacteria.png"></a>
+					<a href="https://en.wikipedia.org/wiki/Protist" title="Study Protist"><img src="images/protist.jpg"></a>
+					<a href="https://en.wikipedia.org/wiki/Fungus" title="Study Fungi"><img src="images/hongo.jpg"></a>
+					<a href="https://en.wikipedia.org/wiki/Plant" title="Study Plant "><img src="images/plant.jpg"></a>
+					<a href="https://en.wikipedia.org/wiki/Animal" title="Study Animal"><img src="images/animal.jpg"></a>
+					
+				</div>
+
+				<h1>Some history...</h1>
+				<p> Our fascination with biology has a long history. Even early humans had to study the animals they hunted and know where to find the plants they gathered for food. The invention of agriculture was the first great advance of human civilization. Medicine has been important to us from earliest history as well. The earliest known medical texts are from China (2500 B.C.), Mesopotamia (2112 B.C.), and Egypt (1800 B.C.).<br><br>
+
+				In classical times, Aristotle is often considered to be the first to practice scientific zoology. He is known to have performed extensive studies of marine life and plants. His student, Theophrastus, wrote one of the West's earliest known botanical texts in 300 B.C. on the structure, life cycle and uses of plants. The Roman physician Galen used his experience in patching up gladiators for the arena to write texts on surgical procedures in A.D. 158.<br><br>
+
+				During the Renaissance, Leonardo da Vinci risked censure by participating in human dissection and making detailed anatomical drawings that are still considered among the most beautiful ever made. Invention of the printing press and the ability to reproduce woodcut illustrations meant that information was much easier to record and disseminate. One of the first illustrated biology books is a botanical text written by German botanist Leonhard Fuchs in 1542. Binomial classification was inaugurated by Carolus Linnaeus in 1735, using Latin names to group species according to their characteristics.
+				<br><br>
+
+				Microscopes opened up new worlds for scientists. In 1665, Robert Hooke, used a simple compound microscope to examine a thin sliver of cork. He observed that the plant tissue consisted of rectangular units that reminded him of the tiny rooms used by monks. He called these units "cells." In 1676, Anton von Leeuwenhoek published the first drawings of living single celled organisms. Theodore Schwann added the information that animal tissue is also composed of cells in 1839.<br><br>
+
+				During the Victorian era, and throughout the 19th century, "Natural Science" became something of a mania. Thousands of new species were discovered and described by intrepid adventurers and by backyard botanists and entomologists alike. In 1812, Georges Cuvier described fossils and hypothesized that Earth had undergone "successive bouts of Creation and destruction" over long periods of time. On Nov. 24, 1859, Charles Darwin published "On the Origin of Species," the text that forever changed the world by showing that all living things are interrelated and that species were not separately created but arise from ancestral forms that are changed and shaped by adaptation to their environment.<br><br>
+
+				While much of the world's attention was captured by biology questions at the macroscopic organism level, a quiet monk was investigating how living things pass traits from one generation to the next. Gregor Mendel is now known as the father of genetics although is papers on inheritance, published in 1866, went largely unnoticed at the time. His work was rediscovered in 1900 and further understanding of inheritance rapidly followed. <br><br>
+
+				The 20th and 21st centuries may be known to future generations as the beginning of the "Biological Revolution." Beginning with Watson and Crick explaining the structure and function of DNA in 1953, all fields of biology have expanded exponentially and touch every aspect of our lives. Medicine will be changed by development of therapies tailored to a patient's genetic blueprint or by combining biology and technology with brain-controlled prosthetics. Economies hinge on the proper management of ecological resources, balancing human needs with conservation. We may discover ways to save our oceans while using them to produce enough food to feed the nations. We may "grow" batteries from bacteria or light buildings with bioluminescent fungi. The possibilities are endless; biology is just coming into its own.<br><br>
+				<p style="font-style: italic">Additional reporting by Rachel Ross, Live Science Contributor</p>
+				</p>
+
+
+	 	</div>
+
+	 </div>
+
+</body>
+</html>
